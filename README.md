@@ -11,7 +11,7 @@ Please follow the setup directions below. Stories for the challenge will be sent
   Order up is an app that tracks chefs, the dishes that they make, and the ingredients that are in those dishes. Chef's have many dishes. Dishes belong to a chef. Dishes have many Ingredients and Ingredients have many dishes. Ingredients should have name and calories.
 
 
-Story 1 of 3
+Story 1 of 3ish
 As a visitor
 When I visit a dish's show page
 I see the name of the chef that made that dish
