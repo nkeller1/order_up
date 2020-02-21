@@ -6,13 +6,13 @@ RSpec.describe Dish, type: :feature do
 
       chef_1 = Chef.create(name: "Billy")
 
-      dish_1 = Dish.create(name: "Fun Food", description: "Really Nice", chef_id: chef_1)
-
-      ingredient_1 = Ingredient.create(name: "Frosting", calories: 600)
-      ingredient_2 = Ingredient.create(name: "Cake", calories: 40)
-      ingredient_3 = Ingredient.create(name: "sprinkles", calories: 50)
-
-      dish_1.ingredients << [ingredient_1, ingredient_2, ingredient_3]
+      dish_1 = chef_1.dishes.create!(
+        name: "Fun Food",
+        description: "Really Nice",
+      )
+      ingredient_1 = dish_1.ingredients.create(name: "Frosting", calories: 600)
+      ingredient_2 = dish_1.ingredients.create(name: "Cake", calories: 40)
+      ingredient_3 = dish_1.ingredients.create(name: "sprinkles", calories: 50)
 
       visit "/dishes/#{dish_1.id}"
 
