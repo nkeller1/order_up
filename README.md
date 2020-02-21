@@ -38,4 +38,3 @@ As a visitor
 When I visit a chef's show page
 I see the three most popular ingredients that the chef uses in their dishes
 (Popularity is based off of how many dishes use that ingredient)
-Collapse

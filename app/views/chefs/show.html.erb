@@ -1,3 +1,10 @@
 <%= @chef.name %>
 
 <%= link_to "All Ingredients", "/chefs/#{@chef.id}/ingredients" %>
+
+
+<h3> Most Popular Items </h3>
+
+<% @chef.most_popular_items.each do |item| %>
+<%=  item.name %>
+<% end %>
